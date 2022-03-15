@@ -30,3 +30,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/respuestas','Api\RespuestasController@store')->name('api.respuestas.store');
 
 Route::get('/tipousuario', 'Api\TiposUsuarioController@index')->name('api.tiposusuarios.index');
+
+Route::get('/sintomas', 'Api\SintomasController@index')->name('api.sintomas.index');
